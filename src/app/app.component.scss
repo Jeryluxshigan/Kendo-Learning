@@ -1,0 +1,190 @@
+/* nav bar */
+body {
+    background: #f5f5f5;
+  }
+  .title {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+  }
+  kendo-badge-container {
+    margin-right: 8px;
+  }
+  ul {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  li {
+    margin: 0 9px;
+  }
+  li:hover {
+    color: #ffc000;
+    cursor: pointer;
+  }
+  .k-appbar-section {
+    display: flex;
+  }
+  .content li {
+    margin: 0;
+    padding: 6px 5px;
+  }
+  .content ul {
+    display: block;
+  }
+  .content {
+    padding: 4px;
+  }
+  @media only screen and (max-width: 600px) {
+    .search-section {
+      display: none;
+    }
+    .appbar-items,
+    .user-actions kendo-badge-container,
+    kendo-avatar.k-avatar,
+    .k-appbar-separator {
+      display: none;
+    }
+
+    .overflow-button,
+    .search {
+      display: block;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .appbar-items,
+    .search,
+    kendo-avatar.k-avatar,
+    .user-actions kendo-badge-container,
+    .k-appbar-separator {
+      display: none;
+    }
+
+    .overflow-button {
+      display: block;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .appbar-items,
+    .user-actions kendo-badge-container,
+    .k-appbar-separator,
+    kendo-avatar.k-avatar {
+      display: block;
+    }
+
+    .overflow-button {
+      display: none;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+  }
+
+/* Default styles for the card */
+
+$txt-small:#bebebe;
+$headding-txt:orange;
+$txt-medium:black;
+
+.k-card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.k-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+    width: calc(25% - 20px);
+    margin: 10px;
+}
+.k-card-image {
+    width: 60px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-left: 1px;
+}
+.k-card-body {
+    padding-left: 2px;
+
+    p {
+        margin-left: 1px;
+        font-size: medium;
+        font-weight: 300;
+        margin-bottom: 1px;
+        color: $txt-small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
+    }
+    .headding {
+        font-weight: 600;
+        font-size: larger;
+        color: $headding-txt;
+        margin-bottom: 3px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .discription{
+        font-size: medium;
+        font-weight: 400;
+        color: $txt-medium;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+/* Styles for small screens */
+@media (max-width: 767px) {
+    .k-card {
+        padding: 10px;
+    }
+
+    .k-card-title {
+        font-size: 18px;
+    }
+}
+
+/* Styles for medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .k-card {
+        padding: 15px;
+    }
+
+    .k-card-title {
+        font-size: 20px;
+    }
+}
+
+/* Styles for large screens */
+@media (min-width: 992px) {
+    .k-card {
+        padding: 20px;
+    }
+
+    .k-card-title {
+        font-size: 24px;
+    }
+}
+
+/* form */
+.k-card2{
+  display: flex;
+  justify-content: center;
+}
+.Form-container {
+  display: flex;
+  justify-content: center;
+}
+.card2{
+  width: 400px;
+  height:20px;
+  background-color: #ffc000;
+}
